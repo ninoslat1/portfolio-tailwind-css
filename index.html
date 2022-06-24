@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!--Navbar Start-->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <div class="px-4">
+                    <a href="#home" class="block p-5 group">
+                        <h1 class="text-white font-light text-2xl transition group-hover:text-blue-600 group-hover:font-bold duration-700">Benedict<span class="text-blue-600 font-bold fixed px-2.5 transition group-hover:text-white group-hover:font-light duration-700">Ell Nino</span></h1>
+                    </a>
+                </div>
+                <div class="flex items-center lg:px-20">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-5 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-cyan-500 shadow-lg rounded-lg max-w-full w-full right-0.5 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#introduction" class="text-white py-2 mx-8 flex group-hover:text-blue-700  duration-300 lg:mx-4 lg:hover:scale-110">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#passion" class="text-white py-2 mx-8 flex group-hover:text-blue-700  duration-300 lg:mx-4 lg:hover:scale-110">Hobby</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio" class="text-white py-2 mx-8 flex group-hover:text-blue-700  duration-300 lg:mx-4 lg:hover:scale-110">Portfolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#blog" class="text-white py-2 mx-8 flex group-hover:text-blue-700  duration-300 lg:mx-4 lg:hover:scale-110">Blog</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="text-white py-2 mx-8 flex group-hover:text-blue-700  duration-300 lg:mx-4 lg:hover:scale-110">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Navbar End-->
+    
+    <!--Main Content Start-->
+    <!--Introduction Start-->
+    <section id="introduction" class="bg-sky-400 py-14 lg:flex items-center justify-center lg:justify-start">
+        <div class="py-4 lg:py-10 px-10 w-full lg:w-1/2">
+            <img src="./src/eeb8333a-dce1-4500-a7b0-dab631.png" class="max-w-md mx-auto rounded-full border-2 border-white bg-top h-48" alt="Image CV">
+        </div>
+        <div class="py-4 lg:py-10 px-10 text-center w-full lg:w-1/2">
+            <p class="text-center lg:text-left text-white text-lg py-2.5 font-bold">Front End Developer | Content Creator</p>
+            <hr class="bg-white my-2 h-1.5 border-none w-14 rounded-full mx-auto lg:m-0">
+            <p class="w-full lg:max-w-md text-white text-base text-center lg:text-left py-2.5">Hello, my name is Benedict Ell Nino. I am from Kampung Pulojahe, Jakarta Timur. I'm a student from Universitas Singaperbangsa, Karawang. I have a interest in Front End Developer, Cryptography, and Art (especially in Illustration and Video).</p>
+        </div>
+    </section>
+    <!--Introduction End-->
+
+    <!--Passion Start-->
+    <section id="passion" class="py-10 bg-slate-200">
+        <div class="max-w-full mx-auto text-center my-10">
+            <h4 class="font-semibold text-lg text-sky-400 my-2.5">Hobby</h4>
+            <h2 class="font-bold  text-2xl my-2.5">Latest Works</h2>
+            <p class="text-light">This is the work i have made in the creative industry</p>
+        </div>
+        <div class="w-full h-1/2 px-4 flex flex-wrap justify-evenly lg:w-10/12 lg:mx-auto">
+            <div class="my-10 p-4 w-1/3 md:w-1/2 lg:w-1/4 bg-white text-left mx-4">
+                <h3 class="font-semibold  text-xl my-5">Front End Developer</h3>
+                <ul class="list-disc list-inside">
+                    <li class="hobby-card">HTML5</li>
+                    <li class="hobby-card">CSS3</li>
+                    <li class="hobby-card">JavaScript</li>
+                </ul>
+                <br>
+                <p class="hobby-card">Framework</p>
+                <br>
+                <ul class="list-disc list-inside">
+                    <li class="hobby-card">Bootstrap</li>
+                    <li class="hobby-card">Tailwind CSS</li>
+                </ul>
+                <br>
+                <center>
+                    <a href="https://github.com/ninoslat1" target="_blank">
+                        <button class="inline-flex justify-center bg-white  border border-black px-2.5 py-2.5 rounded-md transform
+                            duration-700 active:scale-75 hover:border-none hover:text-white hover:bg-black group" type="button">
+                                <span class="pr-2.5 text-sm">Go To GitHub</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform transition-transform group-hover:duration-700 bi bi-github" fill="none" viewBox="0 0 16 16" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                        </button>
+                    </a>
+                </center>
+            </div>
+            <div class="my-10 p-4 w-1/3 md:w-1/2 bg-white lg:w-1/4 text-left mx-4">
+                <h3 class="font-semibold  text-xl my-5">Content Creator</h3>
+                <ul class="list-disc list-inside">
+                    <li class="hobby-card">Illustration</li>
+                    <li class="hobby-card">Video</li>
+                </ul>
+                <br>
+                <p class="hobby-card">Content</p>
+                <br>
+                <ul class="list-disc list-inside">
+                    <li class="hobby-card">Gaming</li>
+                    <li class="hobby-card">Japanese-style Illustration</li>
+                </ul>
+                <br>
+                <center>
+                    <a href="https://www.youtube.com/channel/UCeDxd3XofRwT9LTKRFL65Yw" target="_blank">
+                        <button class="inline-flex bg-white text-red-700 border border-red-700 px-2.5 py-2.5 rounded-md transform
+                            duration-700 active:scale-75 hover:border-none hover:text-white hover:bg-red-700 group" type="button">
+                                <span class="pr-2.5 text-sm">Go To YouTube</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <rect x="3" y="5" width="18" height="14" rx="4" /> <path d="M10 9l5 3l-5 3z" /> </svg>
+                        </button>
+                    </a>
+                </center>
+                <br>
+                <center>
+                    <a href="https://www.pixiv.net/en/users/28749658" target="_blank">
+                        <button class="inline-flex bg-white text-sky-400 border border-sky-400 px-2.5 py-2.5 rounded-md transform
+                            duration-700 active:scale-75 hover:border-none hover:text-white hover:bg-sky-400 group" type="button">
+                                <span class="pr-2.5 text-sm">Go To ArtStation</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform transition-transform group-hover:duration-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.935 0A4.924 4.924 0 0 0 0 4.935v14.13A4.924 4.924 0 0 0 4.935 24h14.13A4.924 4.924 0 0 0 24 19.065V4.935A4.924 4.924 0 0 0 19.065 0zm7.81 4.547c2.181 0 4.058.676 5.399 1.847a6.118 6.118 0 0 1 2.116 4.66c.005 1.854-.88 3.476-2.257 4.563-1.375 1.092-3.225 1.697-5.258 1.697-2.314 0-4.46-.842-4.46-.842v2.718c.397.116 1.048.365.635.779H5.79c-.41-.41.19-.65.644-.779V7.666c-1.053.81-1.593 1.51-1.868 2.031.32 1.02-.284.969-.284.969l-1.09-1.73s3.868-4.39 9.553-4.39zm-.19.971c-1.423-.003-3.184.473-4.27 1.244v8.646c.988.487 2.484.832 4.26.832h.01c1.596 0 2.98-.593 3.93-1.533.952-.948 1.486-2.183 1.492-3.683-.005-1.54-.504-2.864-1.42-3.86-.918-.992-2.274-1.645-4.002-1.646Z" />
+                                </svg>
+                        </button>
+                    </a>
+                </center>
+            </div>
+        </div>
+    </section>
+    <!--Passion End-->
+
+    <!--Portfolio Start-->
+    <section id="portfolio" class="py-10 bg-sky-400 text-center text-white">
+        <div class="w-full px-4">
+            <div class="max-w-full mx-auto text-center my-10">
+                <h4 class="font-semibold text-lg my-2.5">Portfolio</h4>
+                <h2 class="font-bold text-white text-2xl my-2.5">Latest Project</h2>
+                <p class="text-light">These are projects that I have made during the lecture and training period in Bootcamp</p>
+            </div>
+        </div>
+            <div class="w-full px-4 flex flex-wrap justify-center lg:w-10/12 lg:mx-auto">
+                <div class="my-10 p-4 md:w-1/2">
+                    <div class="project-card">
+                        <a href="https://ninoslat1.github.io/tambaksari.github.io/" target="_blank">
+                            <img src="./src/tambaksari.PNG" alt="Tambaksari Website" width="w-full">
+                        </a>
+                    </div>
+                    <h3 class="font-semibold text-white text-xl my-5">Tambaksari Website</h3>
+                    <p class="font-medium text-base">The Tambaksari Village site was built with HTML, CSS, and JavaScript, as a form of community service in Tambaksari Village.</p>
+                </div>
+                <div class="my-10 p-4 md:w-1/2">
+                    <div class="project-card">
+                        <a href="https://codepen.io/benedict-nino/full/GRMVERJ" target="_blank">
+                            <img src="./src/fcc-tribute.PNG" alt="Tribute Page" width="w-full">
+                        </a>
+                    </div>
+                    <h3 class="font-semibold text-white text-xl my-5">Tribute Page</h3>
+                    <p class="font-medium text-base">The site was built in honor of Norman Ernest Borlaug (25 March 1914 - 12 September 2009). A biologist, agronomist, philanthropist, and winner of the 1970 Nobel Peace Prize.</p>
+                </div>
+                <div class="my-10 p-4 md:w-1/2">
+                    <div class="project-card">
+                        <a href="https://codepen.io/benedict-nino/full/zYEgmRP" target="_blank">
+                            <img src="./src/fcc-survey.PNG" alt="Survey Form" width="w-full">
+                        </a>
+                    </div>
+                    <h3 class="font-semibold text-white text-xl my-5">Survey Form</h3>
+                    <p class="font-medium text-base">The site is in the form of a survey form about the coding features of FreeCodeCamp as a service provider of free courses in technology, especially in the field of Websites.</p>
+                </div>
+                <div class="my-10 p-4 md:w-1/2">
+                    <div class="project-card">
+                        <a href="https://codepen.io/benedict-nino/full/gOXPmyp" target="_blank">
+                            <img src="./src/fcc-documentation.PNG" alt="JavaScript Documentation Page" width="w-full">
+                        </a>
+                    </div>
+                    <h3 class="font-semibold text-white text-xl my-5">JavaScript Documentation Page</h3>
+                    <p class="font-medium text-base">The site is in the form of documentation of the JavaScript programming language.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Portfolio End-->
+
+    <!--Blog Start-->
+    <section id="blog" class="py-10 bg-slate-200">
+            <div class="w-full px-4">
+                <div class="w-full mx-auto text-center my-10">
+                    <h4 class="font-semibold text-lg text-sky-400 my-2.5">Blog</h4>
+                    <h2 class="font-bold text-2xl my-2.5">Latest Essay</h2>
+                    <p class="text-light">This is an essay I made in the world of writing</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap w-full px-4 justify-evenly">
+                <div class="my-5 p-4 md:w-1/2 lg:w-1/4">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden my-10">
+                        <img src="https://source.unsplash.com/360x200?front-end-development" alt="Cryptography" class="w-full" />
+                        <div class="py-5 px-10">
+                            <h3 class="font-semibold text-xl text-sky-400 py-2.5 truncate">Tentang Front End Developer</h3>
+                            <p class="text-base py-2.5">Front End adalah bagian website yang menampilkan tampilan pada para pengguna.</p>
+                            <a href="#" target="_blank">
+                                <button class="inline-flex text-white bg-sky-400 border px-2.5 py-2.5 rounded-md transform
+                                    duration-700 hover:opacity-75 active:scale-75" type="button">
+                                        <span class="pr-2.5 text-sm">Baca Selengkapnya</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-5 p-4 md:w-1/2 lg:w-1/4">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden my-10">
+                        <img src="https://source.unsplash.com/360x200?cryptography" alt="Cryptography" class="w-full" />
+                        <div class="py-5 px-10">
+                            <h3 class="font-semibold text-xl text-sky-400 py-2.5 truncate">Tentang Kriptografi</h3>
+                            <p class="text-base py-2.5">Kriptografi adalah teknik untuk menyembunyikan pesan agar tidak dapat mudah dibaca.</p>
+                            <a href="#" target="_blank">
+                                <button class="inline-flex text-white bg-sky-400 border px-2.5 py-2.5 rounded-md transform
+                                duration-700 hover:opacity-75 active:scale-75" type="button">
+                                    <span class="pr-2.5 text-sm">Baca Selengkapnya</span>
+                            </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-5 p-4 md:w-1/2 lg:w-1/4">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden my-10">
+                        <img src="https://source.unsplash.com/360x200?stoicism" alt="Cryptography" class="w-full" />
+                        <div class="py-5 px-10">
+                            <h3 class="font-semibold text-xl text-sky-400 py-2.5 truncate">Tentang Stoicisme</h3>
+                            <p class="text-base py-2.5">Stoikisme adalah nama sebuah aliran atau mazhab Filsafat Yunani Kuno.</p>
+                            <a href="#" target="_blank">
+                                <button class="inline-flex text-white bg-sky-400 border px-2.5 py-2.5 rounded-md transform
+                                    duration-700 hover:opacity-75 active:scale-75" type="button">
+                                        <span class="pr-2.5 text-sm">Baca Selengkapnya</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--Blog End-->
+
+    <!--Contact Start-->
+    <section id="contact" class="py-10 bg-sky-400 text-white">
+        <div class="w-full px-4">
+            <div class="w-full mx-auto my-10 text-center">
+                <h4 class="font-semibold text-lg my-2.5">Contact</h4>
+                <h2 class="font-bold text-2xl my-2.5">Call Me</h2>
+            </div>
+        </div>
+
+        <form action="">
+            <div class="w-full px-4 my-5 md:max-w-md lg:max-w-lg mx-auto">
+                <label for="name" class="text-base font-bold">Name</label>
+                <input type="text" id="name" placeholder="Input Your Name" class="w-full bg-white text-black p-2 rounded-md focus:outline-none focus:ring-1 focus:ring-sky-200 focus:border-sky-200" />
+            </div>
+            <div class="w-full px-4 my-5 md:max-w-md lg:max-w-lg mx-auto">
+                <label for="email" class="text-base font-bold">Email</label>
+                <input type="text" id="email" placeholder="Input Your Email" class="w-full bg-white text-black p-2 rounded-md focus:outline-none focus:ring-1 focus:ring-sky-200 focus:border-sky-200" />
+            </div>
+            <div class="w-full px-4 my-5 md:max-w-md lg:max-w-lg mx-auto">
+                <label for="message" class="text-base font-bold">Message</label>
+                <textarea type="text" id="message" placeholder="Message Me" class="w-full h-36 bg-white text-black p-2 rounded-md focus:outline-none focus:ring-1 focus:ring-sky-200 focus:border-sky-200"></textarea>
+            </div>
+            <div class="w-full px-4 my-5 md:max-w-md lg:max-w-lg mx-auto">
+                <button class="text-base font-semibold text-sky-400 bg-white py-2 px-4 rounded-full w-full transition duration-700 md:max-w-md lg:max-w-lg hover:text-white hover:bg-blue-600">Kirim</button>
+            </div>
+        </form>
+    </section>
+    <!--Contact End-->
+    <!--Main Content End-->
+
+    <!--Footer Start-->
+    <footer class="bg-slate-800 py-10">
+        <div class="flex flex-wrap justify-evenly text-center md:text-left md:pl-20">
+            <div class="w-full px-4 my-5 md:w-1/4">
+                <div>
+                    <a href="#home" class="group">
+                        <h1 class="text-white font-light text-2xl transition group-hover:text-blue-600 group-hover:font-bold duration-700">Benedict<span class="text-blue-600 font-bold px-2.5 transition group-hover:text-white group-hover:font-light duration-700">Ell Nino</span></h1>
+                    </a>
+                </div>
+                <h3 class="text-white font-semibold text-lg my-2.5">Contact Us</h3>
+                <p class="text-white text-base">benedictaartoria@gmail.com</p>
+                <p class="text-white">Kampung Pulojahe RT 006/RW 010</p>
+                <p class="text-white">Jakarta Timur</p>
+            </div>
+            <div class="w-full px-4 my-5 md:w-1/4">
+                <h3 class="font-semibold text-lg text-white">Kategori Tulisan</h3>
+                <ul class="text-slate-500">
+                    <li>
+                        <a href="" class="inline-block text-base duration-500 hover:text-sky-400 hover:scale-110 active:scale-75">Front End</a>
+                    </li>
+                    <li>
+                        <a href="" class="inline-block text-base duration-500 hover:text-sky-400 hover:scale-110 active:scale-75">Cryptography</a>
+                    </li>
+                    <li>
+                        <a href="" class="inline-block text-base duration-500 hover:text-sky-400 hover:scale-110 active:scale-75">Philosophy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full px-4 my-5 md:w-1/4">
+                <h3 class="font-semibold text-lg text-white">Tautan</h3>
+                <ul class="text-slate-500">
+                    <li>
+                        <a href="#" class="inline-block text-base duration-500 hover:text-sky-400 hover:scale-110 active:scale-75">Home</a>
+                    </li>
+                    <li>
+                        <a href="#introduction" class="inline-block text-base duration-500 hover:text-sky-400 hover:scale-110 active:scale-75">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#passion" class="inline-block text-base duration-500 hover:text-sky-400 hover:scale-110 active:scale-75">Hobby</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="inline-block text-base duration-500 hover:text-sky-400 hover:scale-110 active:scale-75">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#blog" class="inline-block text-base duration-500 hover:text-sky-400 hover:scale-110 active:scale-75">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="inline-block text-base duration-500 hover:text-sky-400 hover:scale-110 active:scale-75">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="bg-sky-400 mt-2.5 h-0.5 border-none w-full rounded-full mx-auto lg:m-0">
+        <div class="w-full py-5">
+            <div class="flex items-center justify-center">
+                <a href="https://www.youtube.com/channel/UCeDxd3XofRwT9LTKRFL65Yw" target="_blank" class="w-9 h-9 mx-3 rounded-full flex justify-center items-center border border-white duration-700 hover:border-red-700 hover:bg-red-700 hover:text-white">
+                    <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UCeDxd3XofRwT9LTKRFL65Yw" target="_blank" class="w-9 h-9 mx-3 rounded-full flex justify-center items-center border border-white duration-700 hover:border-black hover:bg-black hover:text-white">
+                    <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="https://www.facebook.com/benedict.nino.33" target="_blank" class="w-9 h-9 mx-3 rounded-full flex justify-center items-center border border-white duration-700 hover:border-blue-700 hover:bg-blue-700 hover:text-white">
+                    <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://twitter.com/Vaneshka_00" target="_blank" class="w-9 h-9 mx-3 rounded-full flex justify-center items-center border border-white duration-700 hover:border-cyan-400 hover:bg-cyan-400 hover:text-white">
+                    <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                </a>
+            </div>
+            <p class="text-sm text-center mt-2.5 text-white">Dibuat dengan menggunakan <span class="text-base text-cyan-400">Tailwind CSS</span></p>
+        </div>
+    </footer>
+    <script src="./dist/script.js"></script>
+    <!--Footer End-->
+</body>
+</html>
