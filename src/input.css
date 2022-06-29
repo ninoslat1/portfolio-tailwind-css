@@ -36,3 +36,15 @@ body {
 .project-card {
   @apply rounded-md shadow-md overflow-hidden;
 }
+
+.nav-link {
+  @apply text-white py-2 mx-8 flex group-hover:text-blue-700  duration-300 lg:mx-4 lg:hover:scale-110;
+}
+
+.hobby-section {
+  @apply my-10 p-4 md:w-full lg:w-1/4 bg-white text-left rounded-md shadow-lg;
+}
+
+.form-input {
+  @apply w-full px-4 my-5 md:max-w-md lg:max-w-lg mx-auto;
+}
