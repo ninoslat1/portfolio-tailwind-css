@@ -18,3 +18,16 @@ hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('hamburger-active');
     navMenu.classList.toggle('hidden');
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const inputMaxLengthOnLoad = document.getElementById('message').maxLength;
+    document.getElementById('show').innerText = inputMaxLengthOnLoad;
+    
+    document.getElementById('message').addEventListener('input', function () {
+    const jumlahKarakterDiketik = document.getElementById('message').value.length;
+    const jumlahKarakterMaksimal = document.getElementById('message').maxLength;
+    
+    const showUpdate = jumlahKarakterMaksimal - jumlahKarakterDiketik;
+    document.getElementById('show').innerText = showUpdate.toString();
+    });
+});
