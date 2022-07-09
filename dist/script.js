@@ -19,7 +19,8 @@ hamburger.addEventListener('click', function() {
     navMenu.classList.toggle('hidden');
 });
 
-document.addEventListener('DOMContentLoaded', function () {
+//Textarea Tracker
+document.addEventListener('DOMContentLoaded', () => {
     const inputMaxLengthOnLoad = document.getElementById('message').maxLength;
     document.getElementById('show').innerText = inputMaxLengthOnLoad;
     
@@ -31,3 +32,15 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('show').innerText = showUpdate.toString();
     });
 });
+
+/*const form = document.getElementById('my-form');
+
+form.addEventListener('submit', handleSubmit = (event) => {
+event.preventDefault();
+
+  // 👇️ Send data to server here
+
+  // 👇️ Reset form here
+form.reset();
+});*/
+
