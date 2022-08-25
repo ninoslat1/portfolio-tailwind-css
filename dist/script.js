@@ -33,14 +33,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-/*const form = document.getElementById('my-form');
+//Form Sender Google Spreadsheet
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwRKxjXsapu_ApnVfFCIoYVuyrJ0yJnk2MLDAmEZUC4uso22RBXbbPsz6Ocx6G55h3D/exec'
+const form = document.forms['submit-to-google-sheet']  
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageInput = document.getElementById("message");
 
-form.addEventListener('submit', handleSubmit = (event) => {
-event.preventDefault();
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            if(nameInput.value === ""|| nameInput.value == null){
+                Swal.fire({
+                    icon: 'warning',
+                    text: 'Name is required',
+                })
+            }
+            else if(emailInput.value === ""|| emailInput.value == null){
+                Swal.fire({
+                    icon: 'warning',
+                    text: 'E-mail is required',
+                })
+            }
+            else if(messageInput.value === ""|| messageInput.value == null){
+                Swal.fire({
+                    icon: 'warning',
+                    text: 'Message is required',
+                })
+            }
+            else {
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Thank you for sending your message',
+                footer: 'Have a nice day',
+                showConfirmButton: false,
+                timer: 1250
+              })
+            form.reset();
+            }
+        });
 
-  // 👇️ Send data to server here
-
-  // 👇️ Reset form here
-form.reset();
-});*/
 

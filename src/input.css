@@ -42,7 +42,7 @@ body {
 }
 
 .hobby-section {
-  @apply my-10 p-4 md:w-full lg:w-1/4 bg-white text-left rounded-md shadow-lg;
+  @apply my-10 p-5 md:w-full lg:w-1/4 bg-white text-left rounded-md shadow-lg;
 }
 
 .form-input {
