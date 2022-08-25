@@ -67,7 +67,7 @@ const messageInput = document.getElementById("message");
             Swal.fire({
                 position: 'center',
                 icon: 'success',
-                title: 'Thank you for sending your message',
+                title: 'Thank you for sending your message ❤',
                 footer: 'Have a nice day',
                 showConfirmButton: false,
                 timer: 1250
