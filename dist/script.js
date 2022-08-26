@@ -64,17 +64,6 @@ const messageInput = document.getElementById("message");
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
-            if(screen.width <= 1000){
-                Swal.fire({
-                    width: '16em',
-                    position: 'center',
-                    icon: 'success',
-                    title: 'Thank you for sending your message ❤',
-                    footer: 'Have a nice day',
-                    showConfirmButton: false,
-                    timer: 1250
-                  })
-            } else {
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
@@ -83,7 +72,6 @@ const messageInput = document.getElementById("message");
                     showConfirmButton: false,
                     timer: 1250
                   })
-            }
             form.reset();
             }
         });

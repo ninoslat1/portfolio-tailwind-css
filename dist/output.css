@@ -1462,13 +1462,13 @@ body {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   --tw-text-opacity: 1;
-  color: rgb(29 78 216 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-duration: 300ms;
 }
 
 .group:hover .nav-link {
   --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
+  color: rgb(6 182 212 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
