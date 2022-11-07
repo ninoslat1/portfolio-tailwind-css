@@ -10,6 +10,37 @@ window.onscroll = function() {
     }
 }
 
+//Lazy Load
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyloadImages = document.getElementsByTagName("img");    
+    var lazyloadThrottleTimeout;
+    
+    function lazyload () {
+      if(lazyloadThrottleTimeout) {
+        clearTimeout(lazyloadThrottleTimeout);
+      }    
+      
+      lazyloadThrottleTimeout = setTimeout(function() {
+          var scrollTop = window.pageYOffset;
+          lazyloadImages.forEach(function(img) {
+              if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+              }
+          });
+          if(lazyloadImages.length == 0) { 
+            document.removeEventListener("scroll", lazyload);
+            window.removeEventListener("resize", lazyload);
+            window.removeEventListener("orientationChange", lazyload);
+          }
+      }, 20);
+    }
+    
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+  });
+
 //Hamburger Menu
 const hamburger = document.querySelector('#hamburger');
 const navMenu = document.querySelector('#nav-menu');
@@ -42,24 +73,21 @@ const messageInput = document.getElementById("message");
 
         form.addEventListener('submit', (e) => {
             e.preventDefault()
-            if(nameInput.value === ""|| nameInput.value == null){
-                Swal.fire({
+            if(nameInput.value === ""|| nameInput.value == null)
+            return Swal.fire({
                     icon: 'warning',
                     text: 'Name is required',
                 })
-            }
-            else if(emailInput.value === ""|| emailInput.value == null){
-                Swal.fire({
+            if(emailInput.value === ""|| emailInput.value == null)
+            return Swal.fire({
                     icon: 'warning',
                     text: 'E-mail is required',
                 })
-            }
-            else if(messageInput.value === ""|| messageInput.value == null){
-                Swal.fire({
+            if(messageInput.value === ""|| messageInput.value == null)
+            return Swal.fire({
                     icon: 'warning',
                     text: 'Message is required',
                 })
-            }
             else {
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => console.log('Success!', response))
