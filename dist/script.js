@@ -3,11 +3,7 @@ window.onscroll = function() {
     const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
 
-    if(window.pageYOffset > fixedNav) {
-        header.classList.add('navbar-fixed')
-    }else{
-        header.classList.remove('navbar-fixed')
-    }
+    window.pageYOffset > fixedNav ? header.classList.add('navbar-fixed') : header.classList.remove('navbar-fixed')
 }
 
 //Lazy Load
@@ -78,6 +74,11 @@ const messageInput = document.getElementById("message");
                     icon: 'warning',
                     text: 'Name is required',
                 })
+            if(typeof nameInput !== "string")
+            return Swal.fire({
+                    icon: 'warning',
+                    text: 'Do not use other character beside alphabet',
+            })
             if(emailInput.value === ""|| emailInput.value == null)
             return Swal.fire({
                     icon: 'warning',
