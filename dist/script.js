@@ -69,16 +69,11 @@ const messageInput = document.getElementById("message");
 
         form.addEventListener('submit', (e) => {
             e.preventDefault()
-            if(nameInput.value === ""|| nameInput.value == null)
+            if(nameInput.value === ""|| nameInput.value == null || typeof nameInput !== "string")
             return Swal.fire({
                     icon: 'warning',
-                    text: 'Name is required',
+                    text: 'Name is required or you use other character beside alphabet',
                 })
-            if(typeof nameInput !== "string")
-            return Swal.fire({
-                    icon: 'warning',
-                    text: 'Do not use other character beside alphabet',
-            })
             if(emailInput.value === ""|| emailInput.value == null)
             return Swal.fire({
                     icon: 'warning',
